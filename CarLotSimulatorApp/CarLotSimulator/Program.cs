@@ -14,8 +14,10 @@ namespace CarLotSimulator
             car1.EngineNoise = "yes";
             car1.HonkNoise = "yes";
             car1.IsDrivable = "no";
-            Console.WriteLine($"The car is a {car1.Year} {car1.Make} {car1.Model}. {car1.CarIsDriveable(car1.IsDrivable)} {car1.MakeEngineNoise(car1.EngineNoise)} {car1.MakeHonkNoise(car1.HonkNoise)}");
 
+            Console.WriteLine($"The car is a {car1.Year} {car1.Make} {car1.Model}. {car1.CarIsDriveable(car1.IsDrivable)} {car1.MakeEngineNoise(car1.EngineNoise)} {car1.MakeHonkNoise(car1.HonkNoise)}");
+            CarLot.AddCar();
+            Console.WriteLine("Number of cars in the car lot: " + CarLot.numberOfCars);
 
             Car car2 = new Car();
             car2.Year = 2002;
@@ -24,7 +26,11 @@ namespace CarLotSimulator
             car2.EngineNoise = "no";
             car2.HonkNoise = "yes";
             car2.IsDrivable = "yes";
+
+
             Console.WriteLine($"The car is a {car2.Year} {car2.Make} {car2.Model}. {car2.CarIsDriveable(car2.IsDrivable)} {car2.MakeEngineNoise(car2.EngineNoise)} {car2.MakeHonkNoise(car2.HonkNoise)}");
+            CarLot.AddCar();
+            Console.WriteLine("Number of cars in the car lot: " + CarLot.numberOfCars);
 
             Car car3 = new Car();
             car3.Year = 2015;
@@ -34,7 +40,8 @@ namespace CarLotSimulator
             car3.HonkNoise = "no";
             car3.IsDrivable = "yes";
             Console.WriteLine($"The car is a {car3.Year} {car3.Make} {car3.Model}. {car3.CarIsDriveable(car3.IsDrivable)} {car3.MakeEngineNoise(car3.EngineNoise)} {car3.MakeHonkNoise(car3.HonkNoise)}");
-
+            CarLot.AddCar();
+            Console.WriteLine("Number of cars in the car lot: " + CarLot.numberOfCars);
 
 
             //TODO
